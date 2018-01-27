@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>(6) No seu HTML exiba a imagem de uma lampada, ao clicar 
+        em cima da lampada, troque o src dela para a lampada que está acessa.</p>
+    <img src="https://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif" alt="Minha foto" id="myimage">
+    <script type="text/javascript">
+        var element = document.getElementById('myimage');
+        element.onclick = function() {
+            if (element.src.match("lampada-on")) {
+                element.src="https://www.devfuria.com.br/javascript/code-lampada/lampada-off.gif";
+            } else {
+                element.src="https://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif";
+            }
+        };
+      </script>
+</body>
+</html>
