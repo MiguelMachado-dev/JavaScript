@@ -74,29 +74,21 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function AnotherIfFunction(f, g, h) {
-  if (f == undefined || g == undefined || h == undefined) {
-    return false;
-  } else if (f != undefined && g === undefined && h === undefined) {
+  if (f !== undefined && g === undefined && h === undefined) {
     return f;
-  } else if (f === undefined && g != undefined && h === undefined) {
-    return g;
-  } else if (f === undefined && g === undefined && h != undefined) {
-    return h;
   } else if (f !== undefined && g !== undefined && h === undefined) {
     return f + g;
-  } else if (f === undefined && g !== undefined && h !== undefined) {
-    return g + h;
-  } else if (f !== undefined && g === undefined && h !== undefined) {
-    return f + h;
   } else if (f !== undefined && g !== undefined && h !== undefined) {
     return (f + g) / h;
+  } else if (f === undefined && g === undefined && h === undefined) {
+    return false;
   } else {
     return null;
   }
-} 
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-AnotherIfFunction(); //false
-AnotherIfFunction(1); //false
-AnotherIfFunction(2, 3); //false
-AnotherIfFunction(10,10,2); //10
+AnotherIfFunction(); // false
+AnotherIfFunction(10); // 10
+AnotherIfFunction(2, 3); // 5
+AnotherIfFunction(10, 10, 2); // 10
