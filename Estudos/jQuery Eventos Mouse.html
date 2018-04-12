@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      //click
+      $('#div1').click(function () {
+        alert('Elemento foi clicado');
+      });
+      //dblclick
+      $('#div1').dblclick(function () {
+        alert('Elemento foi clicado 2x');
+      });
+      //mousedown
+      $('#div1').mousedown(function () {
+        alert('Elemento foi pressionado');
+      });
+      //mouseover
+      $('#div1').mouseover(function () {
+        alert('Elemento foi sobreposto');
+      });
+      //mouseout
+      $('#div1').mouseout(function () {
+        alert('Cursor saiu do elemento');
+      });
+
+    });
+  </script>
+  <title>jQuery Eventos Mouse</title>
+</head>
+
+<body>
+  <div id="div1" style="height: 150px; width: 150px; background: #ccc">
+
+  </div>
+
+</body>
+
+</html>
