@@ -32,15 +32,16 @@ let usernamePrompt = prompt('Qual seu username?')
 let passwordPrompt = prompt('Insira sua senha')
 
 // Verifica se a os dados inseridos estão corretos com a base de dados
-function signIn(user, pass) {
-    if (user === database[0].username &&
-        pass === database[0].password) {
-        console.log(newsfeed)
-    } else {
-        alert('Usuário ou senha errados.')
-    }
-}
+// function signIn(user, pass) {
+//     if (user === database[0].username &&
+//         pass === database[0].password) {
+//         console.log(newsfeed)
+//     } else {
+//         alert('Usuário ou senha errados.')
+//     }
+// }
 
+// Utilizando arrow function
 let signIn = (user, pass) => {
     if (user === database[0].username &&
         pass === database[0].password) {
