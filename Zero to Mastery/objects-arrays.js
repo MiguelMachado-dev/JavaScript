@@ -41,4 +41,13 @@ function signIn(user, pass) {
     }
 }
 
+let signIn = (user, pass) => {
+    if (user === database[0].username &&
+        pass === database[0].password) {
+        console.log(newsfeed)
+    } else {
+        alert('Usuário ou senha errados.')
+    }
+}
+
 signIn(usernamePrompt, passwordPrompt)
