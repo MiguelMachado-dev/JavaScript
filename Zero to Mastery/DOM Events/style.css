@@ -1,0 +1,16 @@
+ul {
+    width: 50%
+  }
+  li {
+    width: 25%;
+  }
+  
+  .done {
+      text-decoration: line-through;
+  }
+  
+  li:hover {
+      cursor: pointer;
+      background-color: black;
+      color: white;
+  }
