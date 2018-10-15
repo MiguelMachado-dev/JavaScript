@@ -22,12 +22,21 @@ function addListAfterClick() {
     }
 }
 
-function addListAfterEnter(event) {
+// Adicionar classe na LI com click
+function checked(event) {
+	if (event.target.tagName === "LI") {
+		event.target.classList.toggle("done");
+	}
+}
 
+function addListAfterEnter(event) {
     if (inputLength() > 0 && event.which === 13) {
         createListElement()
     }
 }
+
+// Se houver um click em LI dentro de qualquer UL, execute a função  checked
+ul.addEventListener("click", checked);
 
 // Se houver um click no botão, execute a função  addListAfterClick
 button.addEventListener("click", addListAfterClick)
