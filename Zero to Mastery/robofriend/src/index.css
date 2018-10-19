@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgba(0, 0, 0, 0) linear-gradient(to left, rgb(12, 180, 243), rgb(38, 217, 91)) repeat scroll 0% 0%;
 }
 
 code {
